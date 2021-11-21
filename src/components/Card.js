@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 const Card = ({candidates,shortlistedCandidates=[],rejectedCandidates=[],from="shortlisted"}) => {
     const history = useNavigate();
 
+    // checks if patient is shortlisted/rejected
     const fetchStatus = (item) =>{
       if(shortlistedCandidates.includes(item?.id)) return <span className="badge shortlisted-badge">Shortlisted</span>
       if(rejectedCandidates.includes(item?.id)) return <span className="badge rejected-badge">Rejected</span>

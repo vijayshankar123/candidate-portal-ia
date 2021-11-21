@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import Card from './Card'
 
+//listing shortlisted/rejected users
 const Listing = ({candidates,filterCandidates,title,}) => {
 
     const [data,setData] = useState([])

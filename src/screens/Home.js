@@ -7,9 +7,10 @@ import SearchBox from '../components/SearchBox'
 const Home = ({candidates,persistCandidates,setCandidates,rejectedCandidates,shortlistedCandidates}) => {
     return (
         <div>
-            
+            {/* searchbox component */}
             <SearchBox persistCandidates={persistCandidates} candidates={candidates} setCandidates={setCandidates} />
             <div className="center-container space-around-container">
+                
             <LeftContainer rejectedCandidates={rejectedCandidates} shortlistedCandidates={shortlistedCandidates}  
             candidates={candidates}
             />

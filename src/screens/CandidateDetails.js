@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router';
 import {useNavigate} from 'react-router-dom';
 
+//user details
 const CandidateDetails = ({candidates,rejectedCandidates,setRejectedCandidates,shortlistedCandidates,setShortlistedCandidates,persistCandidates}) => {
     const {state} = useLocation();
     const history = useNavigate()
@@ -43,9 +44,9 @@ const CandidateDetails = ({candidates,rejectedCandidates,setRejectedCandidates,s
                 <p style={{fontSize:"2rem"}} className="user-role">{state?.role}</p>
             </div>
             <div>
-            <button className="details-button details-button-1" style={shortlistedCandidates?.includes(state?.id) ? {opacity:0.7,cursor:"not-allowed"}:{}}
+            <button className="details-button details-button-1" style={shortlistedCandidates?.includes(state?.id) ? {opacity:0.3,cursor:"not-allowed"}:{}}
             disabled={shortlistedCandidates?.includes(state?.id)} onClick={()=>buttonClickHandler(state,"shortlist")}>Shortlist Candidate</button>
-           <button className="details-button details-button-2" style={rejectedCandidates?.includes(state?.id) ? {opacity:0.7,cursor:"not-allowed"}:{}}
+           <button className="details-button details-button-2" style={rejectedCandidates?.includes(state?.id) ? {opacity:0.3,cursor:"not-allowed"}:{}}
             onClick={()=>buttonClickHandler(state,"reject")}  disabled={rejectedCandidates?.includes(state?.id)}>Reject Candidate</button>
             </div>
           

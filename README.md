@@ -16,4 +16,4 @@ extras:
 1.added summary section in home page.
 2.navbar for easy navigation.
 
-1. tech stack used (Reactjs).
+1. Frontend stack used (Reactjs).

@@ -1,6 +1,8 @@
 import React from 'react'
 import Listing from '../components/Listing'
 
+
+//shortlisted screen
 const Shortlisted = ({candidates,shortlistedCandidates}) => {
 
     return (

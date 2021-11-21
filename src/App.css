@@ -294,17 +294,17 @@ ul {
   justify-content: space-between;
 }
 .navbar-links > li {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   margin: 0 0.6rem;
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /* scrollbar design */
 body::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.9rem;
 }
 
 body::-webkit-scrollbar-track {

@@ -1,6 +1,7 @@
 import React,{Fragment, useState} from 'react'
 
 
+// searchbox component
 let persistSearch = ""
 const SearchBox = ({candidates,persistCandidates,setCandidates}) => {
 

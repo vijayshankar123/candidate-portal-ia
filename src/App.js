@@ -30,8 +30,7 @@ function App() {
       fetchCandidates()
   },[])
 
-  //adding another parameter to the received array -  role (just to display in UI)
-  //adding shortlised and rejected parameters
+  //adding another parameter to the received array - role (just to display in UI)
   useEffect(()=>{
   if(candidates?.length>0  && !("role" in candidates[0])){
       const modifiedCandidates = candidates.map((item,index)=>{
@@ -51,7 +50,7 @@ function App() {
         <Navbar />
         <Routes >
         <Route exact path="/" element={<Home candidates={candidates} persistCandidates={persistCandidates} setCandidates={setCandidates} 
-        rejectedCandidates={rejectedCandidates} shortlistedCandidates ={shortlistedCandidates} 
+         rejectedCandidates={rejectedCandidates} shortlistedCandidates ={shortlistedCandidates} 
         />} />
          <Route exact path="/shortlisted" element={<Shortlisted candidates={persistCandidates} shortlistedCandidates={shortlistedCandidates}  />} />
          <Route exact path="/rejected" element={<Rejected candidates={persistCandidates} rejectedCandidates={rejectedCandidates}  />} />
@@ -60,8 +59,6 @@ function App() {
         rejectedCandidates = {rejectedCandidates} setRejectedCandidates = {setRejectedCandidates}
         
         />}/>
-        {/* <Route exact path="/contact" component={Contact} />
-        <Route exact path="/resume" component={Resume} /> */}
         </Routes>
        
       </div>

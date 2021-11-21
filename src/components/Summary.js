@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
 
+//summary component
 const Summary = ({candidates,rejectedCandidates,shortlistedCandidates}) => {
     const history = useNavigate()
     const fetchLastCandidate = (from) =>{
