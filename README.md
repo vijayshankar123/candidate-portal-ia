@@ -3,7 +3,7 @@
 Deployed url : https://candidate-portal-ia.herokuapp.com/ (HEROKU)
 github url : https://github.com/vijayshankar123/candidate-portal-ia
 
-**HOW TO RUN LOCALLY**
+**STEPS TO RUN LOCALLY**
 
 1. npm install
 2. npm start
