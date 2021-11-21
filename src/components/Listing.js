@@ -12,7 +12,7 @@ const Listing = ({candidates,filterCandidates,title,}) => {
     },[])
 
     return (
-        <div className="center-container shortlisted-container">
+        <div className="center-container listing-container">
             <h1 className="heading">{title}</h1>
             {data.length>0 ?
               <Card candidates={data}/> :
