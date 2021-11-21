@@ -1,7 +1,7 @@
 **IMPACT-ANALYTICS**
 
 Deployed url : https://candidate-portal-ia.herokuapp.com/ (HEROKU)
-github url :
+github url : https://github.com/vijayshankar123/candidate-portal-ia
 
 **HOW TO RUN LOCALLY**
 

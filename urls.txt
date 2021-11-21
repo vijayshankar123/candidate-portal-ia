@@ -1,2 +1,2 @@
 DEPLOYED URL : https://candidate-portal-ia.herokuapp.com (HEROKU)
-github URL : https://candidate-portal-ia.herokuapp.com (GITHUB)
+github URL : https://github.com/vijayshankar123/candidate-portal-ia (GITHUB)
